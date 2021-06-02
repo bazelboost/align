@@ -1,0 +1,96 @@
+load("@rules_cc//cc:defs.bzl", "cc_test", "cc_library")
+
+cc_test(
+    name = "align_down_integral_test",
+    srcs = ["align_down_integral_test.cpp"],
+    deps = ["//:align"],
+)
+cc_test(
+    name = "align_down_test",
+    srcs = ["align_down_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "align_overflow_test",
+    srcs = ["align_overflow_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "align_test",
+    srcs = ["align_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "align_up_integral_test",
+    srcs = ["align_up_integral_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "align_up_test",
+    srcs = ["align_up_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "aligned_alloc_test",
+    srcs = ["aligned_alloc_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_library(
+    name = "aligned_allocator_adaptor_incomplete_test",
+    srcs = ["aligned_allocator_adaptor_incomplete_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "aligned_allocator_adaptor_test",
+    srcs = ["aligned_allocator_adaptor_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_library(
+    name = "aligned_allocator_incomplete_test",
+    srcs = ["aligned_allocator_incomplete_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "aligned_allocator_test",
+    srcs = ["aligned_allocator_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "aligned_delete_test",
+    srcs = ["aligned_delete_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "alignment_of_test",
+    srcs = ["alignment_of_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "assume_aligned_test",
+    srcs = ["assume_aligned_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "is_aligned_integral_test",
+    srcs = ["is_aligned_integral_test.cpp"],
+    deps = ["//:align"],
+)
+
+cc_test(
+    name = "is_aligned_test",
+    srcs = ["is_aligned_test.cpp"],
+    deps = ["//:align"],
+)

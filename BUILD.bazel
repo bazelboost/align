@@ -8,6 +8,11 @@ _public_hdrs = [
 cc_library(
     name = "align_internal",
     hdrs = glob(["include/boost/**/*.hpp"], exclude = _public_hdrs),
+    deps = [
+        "@boost//libs/config",
+        "@boost//libs/assert",
+        "@boost//libs/core",
+    ],
 )
 
 cc_library(
@@ -15,5 +20,9 @@ cc_library(
     visibility = ["//visibility:public"],
     includes = ["include"],
     hdrs = glob(_public_hdrs),
-    deps = [":align_internal"],
+    deps = [
+        ":align_internal",
+        "@boost//libs/config",
+        "@boost//libs/static_assert",
+    ],
 )
